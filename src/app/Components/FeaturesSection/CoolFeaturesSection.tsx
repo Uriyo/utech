@@ -3,11 +3,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Card from '../Card';
+import MobileFeaturesSection from './MobileFeaturesSection';
 
 
 const CoolFeaturesSection: React.FC = () => {
   return (
-    <section className="relative bg-white w-full py-14 pb-44 px-6 lg:px-20 lg:pt-16 lg:pb-56">
+    <div>
+      <div className='lg:hidden'>
+        <MobileFeaturesSection/>
+      </div>
+    <section className="hidden lg:block relative bg-white w-full py-14 pb-44 px-6 lg:px-20 lg:pt-16 lg:pb-56">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="text-2xl lg:text-6xl font-bold text-gray-900 mb-4">
@@ -16,13 +21,13 @@ const CoolFeaturesSection: React.FC = () => {
               cool features
             </span>
           </h2>
-          <p className="text-gray-700 mb-6 lg:text-lg font-normal leading-[36px]">
+          <p className="text-gray-700 pt-5 mb-6  lg:text-xl pr-12 leading-9 font-normal ">
             Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio
             ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit
             pellentesque quisque feugiat cras ullamcorper. Ultrices in amet,
             ullamcorper non viverra a, neque orci.
           </p>
-          <Link href="/" className="text-blue-600 font-semibold">
+          <Link href="/" className="text-blue-600 mt-32 text-lg font-semibold">
             View all the features &rarr;
           </Link>
         </div>
@@ -58,6 +63,7 @@ const CoolFeaturesSection: React.FC = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

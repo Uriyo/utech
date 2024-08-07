@@ -10,7 +10,7 @@ interface Card2Props {
 
 const Card2: React.FC<Card2Props> = ({ content, name, title, imageSrc }) => {
   return (
-    <div className="bg-white p-6 mb-10 rounded-lg shadow-md w-96 h-80 flex-shrink-0">
+    <div className="bg-white p-6 mb-10 rounded-3xl shadow-lg w-80 lg:w-96 h-80 flex-shrink-0">
       <p className="text-gray-700 text-lg mb-6">{content}</p>
       <div className="flex items-center">
         <div className="w-12 h-12 mr-4 rounded-full overflow-hidden">

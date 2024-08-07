@@ -31,7 +31,7 @@ const AppSection: FC = () => {
           </ul>
           <Link
             href="/about"
-            className="text-blue-600 text-lg lg:text-xl inline-flex items-center"
+            className="text-blue-600 font-semibold text-lg lg:text-xl inline-flex items-center"
           >
             Find more about the app
             <Image

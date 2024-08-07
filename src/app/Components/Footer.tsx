@@ -1,28 +1,34 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0F172A] text-slate-400 py-10">
+    <footer className={`bg-[#0F172A] text-slate-400 py-10 ${roboto.className}`}>
       <div className="container mx-auto px-4 lg:px-20">
         <div className="flex flex-wrap justify-between mb-10">
           <div className="w-full lg:w-1/6 mb-6 lg:mb-0">
             <Link href="/" className="text-white text-2xl font-bold">
-              <Image src="/images/FooterLogo.png" alt="Uteach Logo" width={100} height={50} />
+              <Image src="/images/FooterLogo.png" alt="Uteach Logo" width={180} height={50} />
             </Link>
           </div>
           <div className="w-full lg:w-1/6 mb-6 lg:mb-0">
-            <h4 className="text-white text-lg font-bold mb-4">Product</h4>
-            <ul className='text-[#E2E8F0]'>
-              <li><Link href="/pricing" className="hover:text-white">Pricing</Link></li>
-              <li><Link href="/overview" className="hover:text-white">Overview</Link></li>
+            <h4 className="text-white text-lg pt-5 lg:pt-0 font-semibold mb-4">Product</h4>
+            <ul className='text-[#E2E8F0] py-1 space-y-6'>
+              <li><Link href="/pricing" className="mb-6 hover:text-white">Pricing</Link></li>
+              <li><Link href="/overview" className="py-2 hover:text-white">Overview</Link></li>
               <li><Link href="/browse" className="hover:text-white">Browse</Link></li>
-              <li><Link href="/accessibility" className="hover:text-white">Accessibility <span className="bg-[#F3E8FF] text-black rounded-full px-2 py-1 text-xs ml-2">BETA</span></Link></li>
+              <li><Link href="/accessibility" className="hover:text-white">Accessibility <span className="bg-[#F3E8FF] text-black rounded-md px-2 py-1 text-xs ml-2">BETA</span></Link></li>
             </ul>
           </div>
           <div className="w-full lg:w-1/6 mb-6 lg:mb-0">
-            <h4 className="text-white text-lg font-bold mb-4">Solutions</h4>
-            <ul className='text-[#E2E8F0]'>
+            <h4 className="text-white text-lg pt-5 lg:pt-0 font-semibold mb-4">Solutions</h4>
+            <ul className='text-[#E2E8F0] py-1 space-y-6'>
               <li><Link href="/brainstorming" className="hover:text-white">Brainstorming</Link></li>
               <li><Link href="/ideation" className="hover:text-white">Ideation</Link></li>
               <li><Link href="/wireframing" className="hover:text-white">Wireframing</Link></li>
@@ -30,8 +36,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full lg:w-1/6 mb-6 lg:mb-0">
-            <h4 className="text-white text-lg font-bold mb-4">Resources</h4>
-            <ul className='text-[#E2E8F0]'>
+            <h4 className="text-white text-lg pt-5 lg:pt-0 font-semibold mb-4">Resources</h4>
+            <ul className='text-[#E2E8F0] py-1 space-y-6'>
               <li><Link href="/help-center" className="hover:text-white">Help Center</Link></li>
               <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
               <li><Link href="/tutorials" className="hover:text-white">Tutorials</Link></li>
@@ -39,8 +45,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full lg:w-1/6 mb-6 lg:mb-0">
-            <h4 className="text-white text-lg font-bold mb-4">Support</h4>
-            <ul className='text-[#E2E8F0]'>
+            <h4 className="text-white text-lg pt-5 lg:pt-0 font-semibold mb-4">Support</h4>
+            <ul className='text-[#E2E8F0] py-1 space-y-6'>
               <li><Link href="/contact-us" className="hover:text-white">Contact Us</Link></li>
               <li><Link href="/developers" className="hover:text-white">Developers</Link></li>
               <li><Link href="/documentation" className="hover:text-white">Documentation</Link></li>
@@ -48,8 +54,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-full lg:w-1/6 mb-6 lg:mb-0">
-            <h4 className="text-white text-lg font-bold mb-4">Company</h4>
-            <ul className='text-[#E2E8F0]'>
+            <h4 className="text-white text-lg pt-5 lg:pt-0 font-semibold mb-4">Company</h4>
+            <ul className='text-[#E2E8F0] py-1 space-y-6'>
               <li><Link href="/about" className="hover:text-white">About</Link></li>
               <li><Link href="/press" className="hover:text-white">Press</Link></li>
               <li><Link href="/events" className="hover:text-white">Events</Link></li>

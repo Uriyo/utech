@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HeroSection from "./Components/home/HeroSection";
-import Header from "./Components/Header";
 import ToolsSection from "./Components/toolsSection/ToolSection";
 import JoinLearningSection from "./Components/LearnSection/JoinLearningSection";
 import AppSection from "./Components/appSection/AppSection";
@@ -12,8 +11,8 @@ import HorizontalSlider from "./Components/Slider/HorizontalSlider";
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
-      <Header/>
-      <HeroSection/>
+        <HeroSection/>
+      
       <ToolsSection/>
       
       <AppSection/>

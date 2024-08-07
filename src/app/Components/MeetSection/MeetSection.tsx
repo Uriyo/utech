@@ -4,7 +4,7 @@ import Link from 'next/link';
 const MeetSection: React.FC = () => {
   return (
     <div>
-      <section className="bg-white py-20 px-6 lg:pb-28 lg:-pt-20   lg:px-20">
+      <section className="bg-white py-20 px-6 lg:pb-28 lg:-pt-20 -mt-40   lg:px-20">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
             <Image src="/images/Col.png" alt="Student 1" width={600} height={650} className="rounded-md" />
@@ -27,7 +27,7 @@ const MeetSection: React.FC = () => {
               {/* <br /> */}
               Placera ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
             </p>
-            <Link href="/explore" className="text-blue-600 text-lg lg:text-xl inline-flex items-center">
+            <Link href="/explore" className="text-blue-600 text-lg font-semibold lg:text-xl inline-flex items-center">
               
                 Explore teachers and students
                 <Image 

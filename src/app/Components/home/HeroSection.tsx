@@ -1,10 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from '../Header';
 
 const HeroSection = () => {
   return (
+    <div>
     <section className="bg-white pt-10 py-14 pl-0 lg:px-20">
-      <div className="container  mx-auto px-0 flex flex-col lg:flex-row items-center justify-around">
+      <div className='-mt-10'>
+      <Header/>
+      </div>
+      <div className="container pt-8 lg:pt-5 mx-auto px-0 flex flex-col lg:flex-row items-center justify-around">
         <div className="lg:w-1/2 ml-5 lg:mx-0 justify-start  mb-12 lg:mb-0">
           <h1 className="text-4xl font-bold lg:text-7xl lg:font-extrabold text-slate-900 ">
             <span className="underline decoration-orange-500">Teach</span>{" "}
@@ -19,7 +24,7 @@ const HeroSection = () => {
           <div className="mt-8 flex flex-row">
             <Link
               href="/signup"
-              className="w-40 bg-orange-600 text-white px-0 py-5 lg:px-6 lg:py-5  text-center font-bold rounded-md mr-4 lg:w-60 lg:text-xl  "
+              className="w-40 bg-orange-600 text-white px-0 py-3 lg:px-6 lg:py-5  text-center font-bold rounded-md mr-4 lg:w-60 lg:text-xl  "
             >
               Sign Up Now
             </Link>
@@ -28,13 +33,14 @@ const HeroSection = () => {
               className="text-blue-600 lg:text-lg font-semibold text-sm flex items-center "
             >
               <Image className='ml-5' src="/images/play-circle.png" alt='image play' width={20} height={20}></Image>
-              <span className="px-3">View Demo</span>
+              <span className="px-3 text-[16px]">View Demo</span>
             </Link>
           </div>
           <div className="mt-12 flex flex-col lg:flex-row  lg:items-center   gap-2">
-            <p className="text-[#475569] text-xs mr-10 text-left">
-              Trusted by <br /> leading companies
+            <p className="text-[#475569] text-[16px] mr-10 text-left">
+              Trusted by <span className='hidden lg:inline'><br /></span>leading companies
             </p>
+            
             <div className='flex flex-row justify-start items-start gap-5 lg:gap-10'>
               <Image
                 src="/images/Company4.png"
@@ -88,6 +94,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

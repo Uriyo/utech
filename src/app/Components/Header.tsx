@@ -17,8 +17,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md w-full">
-      <div className="container mx-auto px-4 lg:px-20 py-6 flex items-center justify-between">
+    <header className="bg-white  w-full">
+      <div className="container mx-auto  px-4 lg:px-2 py-6 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
@@ -30,19 +30,19 @@ const Header = () => {
           </Link>
         
         <nav className="hidden lg:flex ml-12 space-x-12 relative">
-          <Link href="/products" className="text-gray-700 hover:text-gray-900">
+          <Link href="/products" className="text-[16px] font-bolder text-slate-900 hover:text-gray-800">
             Products
           </Link>
-          <Link href="/solutions" className="text-gray-700 hover:text-gray-900">
+          <Link href="/solutions" className="text-[16px] text-slate-900 font-bolder hover:text-gray-800">
             Solutions
           </Link>
-          <Link href="/pricing" className="text-gray-700 hover:text-gray-900">
+          <Link href="/pricing" className="text-[16px] text-slate-900 font-bolder hover:text-gray-800">
             Pricing
           </Link>
           <div className="inline-block relative">
             <button
               onClick={toggleDropdown}
-              className="flex items-center text-gray-700 hover:text-gray-900"
+              className="flex items-center text-[16px] text-slate-900 font-bolder hover:text-gray-800"
             >
               Resources{"  "}
               <Image
@@ -76,12 +76,12 @@ const Header = () => {
         </nav>
         </div>
         <div className="hidden lg:flex items-center space-x-4">
-          <Link href="/login" className="text-gray-700 hover:text-gray-900">
+          <Link href="/login" className="text-[16px] text-slate-900 hover:text-gray-900">
             Log In
           </Link>
           <Link
             href="/signup"
-            className="bg-white border-[3px] border-gray-700 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-100"
+            className="bg-white border-[3px] border-slate-900 text-slate-900 px-4 py-2 rounded-md hover:bg-gray-100"
           >
             Sign Up Now
           </Link>

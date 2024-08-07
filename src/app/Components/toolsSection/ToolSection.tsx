@@ -3,7 +3,7 @@ import Image from 'next/image';
 const ToolsSection = () => {
   return (
     <section className="relative bg-[#F1F5F9] py-14 lg:py-20 px-6 lg:px-20">
-      <div className="relative container mx-auto text-center lg:text-center">
+      <div className="relative container mx-auto text-left lg:text-center">
         <h2 className="text-2xl lg:text-6xl font-extrabold text-slate-900 mb-4 relative z-20">
           All the{" "}
           <span className="relative inline-block">

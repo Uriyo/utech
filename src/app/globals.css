@@ -45,12 +45,22 @@ body {
 
 .list-checkmark {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.list-checkmark li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .list-checkmark li::before {
   content: '✓';
   color: black; 
-  font-weight: gray;
-  display: inline-block; 
-  width: 1em; 
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.font-bolder{
+  font-weight: 500;
 }
