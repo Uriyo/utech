@@ -1,11 +1,13 @@
+// components/HorizontalSlider.tsx
 "use client"
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Card2 from '../Card2';
 import Image from 'next/image';
 
 const HorizontalSlider: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
     {
@@ -58,6 +60,24 @@ const HorizontalSlider: React.FC = () => {
     }
   };
 
+  const handleScroll = () => {
+    if (sliderRef.current) {
+      const index = Math.round(sliderRef.current.scrollLeft / sliderRef.current.clientWidth);
+      setCurrentIndex(index);
+    }
+  };
+
+  useEffect(() => {
+    if (sliderRef.current) {
+      sliderRef.current.addEventListener('scroll', handleScroll);
+    }
+    return () => {
+      if (sliderRef.current) {
+        sliderRef.current.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
+
   return (
     <section className="bg-white py-14 px-6 lg:px-20 lg:py-24">
       <div className="container mx-auto">
@@ -87,6 +107,14 @@ const HorizontalSlider: React.FC = () => {
                 name={testimonial.name}
                 title={testimonial.title}
                 imageSrc={testimonial.imageSrc}
+              />
+            ))}
+          </div>
+          <div className="flex justify-center mt-4 lg:hidden">
+            {testimonials.map((_, index) => (
+              <div
+                key={index}
+                className={`w-2 h-2 rounded-full mx-1 ${index === currentIndex ? 'bg-red-500' : 'bg-gray-400'}`}
               />
             ))}
           </div>
