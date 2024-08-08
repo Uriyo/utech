@@ -30,13 +30,13 @@ const Header = () => {
           </Link>
         
         <nav className="hidden lg:flex ml-12 space-x-12 relative">
-          <Link href="/products" className="text-[16px] font-bolder text-slate-900 hover:text-gray-800">
+          <Link href="/" className="text-[16px] font-bolder text-slate-900 hover:text-gray-800">
             Products
           </Link>
-          <Link href="/solutions" className="text-[16px] text-slate-900 font-bolder hover:text-gray-800">
+          <Link href="/" className="text-[16px] text-slate-900 font-bolder hover:text-gray-800">
             Solutions
           </Link>
-          <Link href="/pricing" className="text-[16px] text-slate-900 font-bolder hover:text-gray-800">
+          <Link href="/" className="text-[16px] text-slate-900 font-bolder hover:text-gray-800">
             Pricing
           </Link>
           <div className="inline-block relative">
@@ -56,17 +56,17 @@ const Header = () => {
             {dropdownOpen && (
               <ul className="absolute mt-2 py-2 w-48 bg-white border rounded shadow-lg z-50">
                 <li>
-                  <Link href="/resource1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                     Resource 1
                   </Link>
                 </li>
                 <li>
-                  <Link href="/resource2" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                     Resource 2
                   </Link>
                 </li>
                 <li>
-                  <Link href="/resource3" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                     Resource 3
                   </Link>
                 </li>
@@ -76,11 +76,11 @@ const Header = () => {
         </nav>
         </div>
         <div className="hidden lg:flex items-center space-x-4">
-          <Link href="/login" className="text-[16px] text-slate-900 hover:text-gray-900">
+          <Link href="/" className="text-[16px] text-slate-900 hover:text-gray-900">
             Log In
           </Link>
           <Link
-            href="/signup"
+            href="/"
             className="bg-white border-[3px] border-slate-900 text-slate-900 px-4 py-2 rounded-md hover:bg-gray-100"
           >
             Sign Up Now
@@ -95,13 +95,13 @@ const Header = () => {
       {menuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200">
           <nav className="px-4 py-4 space-y-2">
-            <Link href="/products" className="block text-gray-700 hover:text-gray-900">
+            <Link href="/" className="block text-gray-700 hover:text-gray-900">
               Products
             </Link>
-            <Link href="/solutions" className="block text-gray-700 hover:text-gray-900">
+            <Link href="/" className="block text-gray-700 hover:text-gray-900">
               Solutions
             </Link>
-            <Link href="/pricing" className="block text-gray-700 hover:text-gray-900">
+            <Link href="/" className="block text-gray-700 hover:text-gray-900">
               Pricing
             </Link>
             <div className="relative">
@@ -121,27 +121,27 @@ const Header = () => {
               {dropdownOpen && (
                 <ul className="mt-2 py-2 w-full bg-white border rounded shadow-lg">
                   <li>
-                    <Link href="/resource1" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                    <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                       Resource 1
                     </Link>
                   </li>
                   <li>
-                    <Link href="/resource2" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                    <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                       Resource 2
                     </Link>
                   </li>
                   <li>
-                    <Link href="/resource3" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                    <Link href="/" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                       Resource 3
                     </Link>
                   </li>
                 </ul>
               )}
             </div>
-            <Link href="/login" className="block text-gray-700 hover:text-gray-900">
+            <Link href="/" className="block text-gray-700 hover:text-gray-900">
               Log In
             </Link>
-            <Link href="/signup" className="block bg-white border-[3px] border-gray-700 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-100">
+            <Link href="/" className="block bg-white border-[3px] border-gray-700 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-100">
               Sign Up Now
             </Link>
           </nav>

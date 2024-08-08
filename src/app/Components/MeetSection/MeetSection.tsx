@@ -28,7 +28,7 @@ const MeetSection: React.FC = () => {
               {/* <br /> */}
               Placera ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
             </p>
-            <Link href="/explore" className="text-blue-600 text-lg font-semibold lg:text-xl inline-flex items-center">
+            <Link href="/" className="text-blue-600 text-lg font-semibold lg:text-xl inline-flex items-center">
               
                 Explore teachers and students
                 <Image 

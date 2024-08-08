@@ -23,13 +23,13 @@ const HeroSection = () => {
           </p>
           <div className="mt-8 flex flex-row">
             <Link
-              href="/signup"
+              href="/"
               className="w-40 bg-orange-600 text-white px-0 py-3 lg:px-6 lg:py-5  text-center font-bold rounded-md mr-4 lg:w-60 lg:text-xl  "
             >
               Sign Up Now
             </Link>
             <Link
-              href="/demo"
+              href="/"
               className="text-blue-600 lg:text-lg font-semibold text-sm flex items-center "
             >
               <Image className='ml-5' src="/images/play-circle.png" alt='image play' width={20} height={20}></Image>
