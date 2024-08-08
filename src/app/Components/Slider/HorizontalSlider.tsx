@@ -79,7 +79,7 @@ const HorizontalSlider: React.FC = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="flex overflow-x-auto space-x-6 scrollbar-hide" ref={sliderRef}>
+          <div className="flex overflow-x-auto space-x-4 lg:space-x-6 scrollbar-hide" ref={sliderRef}>
             {testimonials.map((testimonial, index) => (
               <Card2
                 key={index}

@@ -4,13 +4,13 @@ import Link from 'next/link';
 const MeetSection: React.FC = () => {
   return (
     <div>
-      <section className="bg-white py-20 px-6 lg:pb-28 lg:-pt-20 -mt-40   lg:px-20">
+      <section className="bg-white py-20 px-6 lg:pb-28 lg:-pt-20 mt-32 lg:-mt-48   lg:px-20">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+          <div className="hidden lg:flex flex-wrap justify-center lg:justify-start gap-4">
             <Image src="/images/Col.png" alt="Student 1" width={600} height={650} className="rounded-md" />
           </div>
           <div className="flex flex-col justify-center text-left">
-            <h2 className="text-3xl lg:text-6xl font-extrabold text-slate-900 mb-6">
+            <h2 className="text-2xl lg:text-6xl font-extrabold text-slate-900 mb-6">
               Meet international
               <Image
                 src="/images/plane-departure.png"
@@ -19,7 +19,8 @@ const MeetSection: React.FC = () => {
                 height={64}
                 className="inline-block -ml-14 -mt-12 lg:-ml-20 lg:-mt-24 p-4 lg:p-0"
               /> 
-              <br />
+              <span className='hidden lg:inline' ><br /></span>
+              
               students & teachers
             </h2>
             <p className="text-slate-700 mb-8 text-[16px] font-normal leading-[22.4px] text-left sm:text-[20px] sm:leading-[36px]">
@@ -39,6 +40,9 @@ const MeetSection: React.FC = () => {
                 />
               
             </Link>
+          </div>
+          <div className=" lg:hidden flex-wrap justify-center gap-4">
+            <Image src="/images/Col.png" alt="Student 1" width={600} height={650} className="" />
           </div>
         </div>
       </section>

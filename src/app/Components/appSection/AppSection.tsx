@@ -2,10 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 import Card from '../Card';
+import MobileView from './MobileView';
 
 const AppSection: FC = () => {
   return (
-    <section className="relative bg-white pt-14 md:mb-72 pb-56 lg:pb-10 px-6 lg:px-20 lg:pt-24">
+    <div>
+      <div className='lg:hidden'>
+        <MobileView/>
+      </div>
+    <section className="hidden lg:block relative bg-white pt-14 md:mb-72 pb-56 lg:pb-10 px-6 lg:px-20 lg:pt-24">
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 mb-12 lg:mb-0 z-20">
           <h2 className="text-2xl lg:text-6xl font-bold lg:font-extrabold text-gray-900 mb-4">
@@ -106,6 +111,7 @@ const AppSection: FC = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
